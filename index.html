@@ -14,8 +14,10 @@
     <main>
         <h2>Dad Joke Generator</h2>
         <p>Click the button below to randomly generate some of the <strong>best</strong> dad jokes!</p>
-        <h4 id="dadJokeResult">Dad joke placeholder</h4>
-        <button onclick="makeJoke">Generate</button>
+        <h4 id="dadJokeQuestion">Question:</h4>
+        <h4 id="dadJokeResult">Answer:</h4>
+        <button id="btn" onclick="makeJoke()">Generate</button>
+        <button id="btn" onclick="clearJoke()">Reset</button>
     </main>
     <script src="index.js"></script>
 </body>
