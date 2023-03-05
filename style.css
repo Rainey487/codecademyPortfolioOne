@@ -42,7 +42,34 @@ main h4 {
     padding: 1rem 2.5rem;
 }
 
+main input {
+    margin: 1rem 2.5rem;
+    padding: 0.5rem;
+}
+
 main button {
-    margin: 1em 3em;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+main button:hover {
+    background-color: gray;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#btnGen {
+    margin: 1em 1em 1em 3em;
+    padding: 0.5rem;
+}
+
+#btnClear {
+    margin: 1em 1em 1em 1em;
+    padding: 0.5rem;
+}
+
+#btnCheck {
+    margin: 1em 3em 1em 1em;
     padding: 0.5rem;
 }

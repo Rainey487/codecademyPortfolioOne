@@ -64,6 +64,8 @@ const dadJokes = [
     }
 ]
 
+let answerBox = document.getElementById('answerBox')
+
 const makeJoke = joke => {
     const random = Math.floor(Math.random() * dadJokes.length)
     let randomJoke = dadJokes[random]
@@ -75,4 +77,3 @@ const clearJoke = clearJoke => {
     document.getElementById("dadJokeQuestion").innerHTML = 'Question:'
     document.getElementById("dadJokeResult").innerHTML = 'Answer:'
 }
-
