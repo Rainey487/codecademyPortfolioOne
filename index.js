@@ -8,55 +8,55 @@ const dadJokes = [
     },
     {
         "question": "Why did I quit my job at the coffee shop the other day?",
-        "answer": "It was just the same old grind over and over."
+        "answer": "It was just the same old grind over and over"
     },
     {
         "question": "Why should you never buy anything that has Velcro with it?",
-        "answer": "It's a total rip-off."
+        "answer": "It's a total rip-off"
     },
     {
         "question": "What is the most groundbreaking invention of all time?",
-        "answer": "The shovel."
+        "answer": "The shovel"
     },
     {
         "question": "Did you hear about the famous Italian chef that recently died?",
-        "answer": "He pasta way."
+        "answer": "He pasta way"
     },
     {
         "question": "What kind of music do astronauts listen to?",
-        "answer": "Neptunes."
+        "answer": "Neptunes"
     },
     {
         "question": "What do you call Santa’s little helpers?",
-        "answer": "Subordinate clauses."
+        "answer": "Subordinate clauses"
     },
     {
         "question": "What’s the difference between a hippo and a zippo?",
-        "answer": "One is extremely big and heavy, and the other is a little lighter."
+        "answer": "One is extremely big and heavy, and the other is a little lighter"
     },
     {
         "question": "Where did Captain Hook get his hook?",
-        "answer": "From the second-hand store."
+        "answer": "From the second-hand store"
     },
     {
         "question": "Why did Shakespeare’s wife leave him?",
-        "answer": "She got sick of all the drama."
+        "answer": "She got sick of all the drama"
     },
     {
         "question": "Why should you never write with a dull pencil?",
-        "answer": "It's pointless."
+        "answer": "It's pointless"
     },
     {
         "question": "How do you get a job at the moisturizer factory?",
-        "answer": "Apply daily."
+        "answer": "Apply daily"
     },
     {
         "question": "Why did the scarecrow win an award?",
-        "answer": "Because he was outstanding in his field."
+        "answer": "Because he was outstanding in his field"
     },
     {
         "question": "Did you hear about the cheese factory that exploded in France?",
-        "answer": "There was nothing left but de Brie."
+        "answer": "There was nothing left but de Brie"
     },
     {
         "question": "What do you get when you cross a snowman with a vampire?",
@@ -65,15 +65,32 @@ const dadJokes = [
 ]
 
 let answerBox = document.getElementById('answerBox')
+let answer = ''
+let points = 0
 
 const makeJoke = joke => {
     const random = Math.floor(Math.random() * dadJokes.length)
     let randomJoke = dadJokes[random]
     document.getElementById("dadJokeQuestion").innerHTML = 'Question:' + ' ' + randomJoke.question
-    document.getElementById("dadJokeResult").innerHTML = 'Answer:' + ' ' + randomJoke.answer
+    answer = randomJoke.answer
+    answerBox.value = ''
+}
+
+const checkJoke = checkJoke => {
+    if (answer === answerBox.value) {
+        document.getElementById("dadJokeResult").innerHTML = 'Good work you got it!'
+
+
+    } else if (answerBox.value === '') {
+        document.getElementById("dadJokeResult").innerHTML = 'Come on! Take a guess next time, the answer was:' + ' ' + answer
+
+
+    } else document.getElementById("dadJokeResult").innerHTML = 'You need to brush up on your dad jokes, the answer was:' + ' ' + answer
+
 }
 
 const clearJoke = clearJoke => {
     document.getElementById("dadJokeQuestion").innerHTML = 'Question:'
     document.getElementById("dadJokeResult").innerHTML = 'Answer:'
+    answerBox.value = ''
 }

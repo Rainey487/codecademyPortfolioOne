@@ -42,34 +42,62 @@ main h4 {
     padding: 1rem 2.5rem;
 }
 
-main input {
-    margin: 1rem 2.5rem;
-    padding: 0.5rem;
-}
-
 main button {
     background-color: whitesmoke;
     border: none;
     border-radius: 0.3rem;
 }
 
-main button:hover {
-    background-color: gray;
-    transition: 0.5s ease-in-out;
+#btnGen:hover {
+    box-shadow: 0 0.25rem rgb(15, 109, 15);
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+    transform: translateY(-0.18rem);
 }
 
+#btnClear:hover {
+    box-shadow: 0 0.25rem rgb(151, 21, 21);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transform: translateY(-0.18rem);
+}
+
+#btnCheck:hover {
+    box-shadow: 0 0.25rem rgb(23, 109, 143);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transform: translateY(-0.18rem);
+}
+
+
 #btnGen {
+    background-color: rgb(23, 167, 23);
+    color: whitesmoke;
     margin: 1em 1em 1em 3em;
     padding: 0.5rem;
+    box-shadow: 0 0.1rem rgb(15, 109, 15);
 }
 
 #btnClear {
+    background-color: rgb(226, 31, 31);
+    color: whitesmoke;
     margin: 1em 1em 1em 1em;
     padding: 0.5rem;
+    box-shadow: 0 0.1rem rgb(151, 21, 21);
 }
 
 #btnCheck {
+    background-color: rgb(37, 171, 224);
+    color: whitesmoke;
     margin: 1em 3em 1em 1em;
     padding: 0.5rem;
+    box-shadow: 0 0.1rem rgb(23, 109, 143);
+}
+
+#answerBox {
+    margin: 1rem 1rem 1rem 2.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 0 0.1rem rgb(80, 80, 80);
 }

@@ -15,9 +15,11 @@
         <h2>Dad Joke Generator</h2>
         <p>Click the button below to randomly generate some of the <em><strong>best</strong></em> dad jokes!</p>
         <h4 id="dadJokeQuestion">Question:</h4>
-        <h4 id="dadJokeResult">The correct answer is: </h4>
+        <h4 id="dadJokeResult"></h4>
+        <input placeholder="Enter your answer..." id="answerBox" type="text">
+        <button id="btnCheck" onclick="checkJoke()">Check Answer</button>
         <br>
-        <button id="btnGen" onclick="makeJoke()">Generate</button>
+        <button id="btnGen" onclick="makeJoke()">Generate Joke</button>
         <button id="btnClear" onclick="clearJoke()">Reset</button>
     </main>
     <script src="index.js"></script>
