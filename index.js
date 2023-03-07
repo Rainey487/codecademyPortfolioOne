@@ -125,6 +125,7 @@ const makeJoke = joke => {
     document.getElementById("dadJokeQuestion").innerHTML = 'Question:' + ' ' + randomJoke.question
     answer = randomJoke.answer
     answerBox.value = ''
+    document.getElementById("dadJokeResult").innerHTML = 'What could it be...'
 }
 
 const checkJoke = checkJoke => {
